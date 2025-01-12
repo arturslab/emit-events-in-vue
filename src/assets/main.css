@@ -1,0 +1,131 @@
+@import "./base.css";
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: block;
+}
+.col {
+  flex: 1;
+  padding: 16px;
+}
+.col-md {
+  width: 100%;
+  padding: 16px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col {
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .flex-row {
+    flex-direction: row;
+  }
+}
+
+.card {
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid #636060;
+  border-radius: 5px;
+  min-width: 330px;
+}
+.card p {
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.buttons .btn {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #7d7d7d;
+}
+
+.buttons .btn:hover {
+  background-color: #c3c3c3;
+}
+
+.buttons .btn.loading {
+  background-color: #e91e63;
+  color: #1a1a1a;
+  cursor: not-allowed;
+}
+
+p {
+  margin: 16px 0;
+}
+
+pre {
+  background-color: #101010;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #636060;
+}
+
+em,
+code {
+  color: #8bc34a;
+}
+
+.bg_red {
+  background-color: #e91e63;
+  color: #1a1a1a;
+}
+.bg_green {
+  background-color: #8bc34a;
+  color: #1a1a1a;
+}
+
+.value_false {
+  color: #8bc34a;
+}
+.value_true {
+  color: #e91e63;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-md {
+    margin: 0;
+  }
+}
