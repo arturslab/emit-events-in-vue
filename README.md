@@ -27,17 +27,29 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
+# npm
 npm install
+
+# yarn
+yarn
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
+# npm
 npm run dev
+
+# yarn
+yarn dev
 ```
 
 ### Compile and Minify for Production
 
 ```sh
+# npm
 npm run build
+
+# yarn
+yarn build
 ```

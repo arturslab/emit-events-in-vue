@@ -3,7 +3,7 @@ import Home from "./components/Home.vue";
 </script>
 
 <template>
-  <div id="app">
+  <div id="wp-melma-vue-emit-events">
     <main>
       <Home />
     </main>
