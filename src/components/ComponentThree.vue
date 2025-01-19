@@ -1,33 +1,33 @@
 <template>
-  <div class="card">
+  <div class="mve-card">
     <h2>Child Component {{ title }}</h2>
-    <h3>reload: <span :class="reload ? 'value_true' : 'value_false'">{{ reload }}</span></h3>
-    <p class="bg_red" v-if="load">
+    <h3>reload: <span :class="reload ? 'mve-value_true' : 'mve-value_false'">{{ reload }}</span></h3>
+    <p class="mve-bg_red" v-if="load">
       Reload component {{ title }} in progress...
     </p>
-    <p class="bg_green" v-else>Child {{ title }} content</p>
+    <p class="mve-bg_green" v-else>Child {{ title }} content</p>
 
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" :id="`useRoot${childIndex}`" v-model="useRoot">
-      <label class="form-check-label" :for="`useRoot${childIndex}`"> use $root</label>
+    <div class="mve-form-check">
+      <input type="checkbox" class="mve-form-check-input" :id="`useRoot${childIndex}`" v-model="useRoot">
+      <label class="mve-form-check-label" :for="`useRoot${childIndex}`"> use $root</label>
     </div>
 
-    <div class="buttons">
-      <button class="btn" @click="onReload('One')">Reload One</button>
-      <button class="btn" @click="onReload('Two')">Reload Two</button>
-      <button :class="['btn', { loading: load }]" :disabled="load" @click="onReload(childIndex)">
+    <div class="mve-buttons">
+      <button class="mve-btn" @click="onReload('One')">Reload One</button>
+      <button class="mve-btn" @click="onReload('Two')">Reload Two</button>
+      <button :class="['mve-btn', { 'mve-loading': load }]" :disabled="load" @click="onReload(childIndex)">
         Reload Three
       </button>
     </div>
 
-    <div class="mt-10" v-if="useRoot">
+    <div class="mve-mt-10" v-if="useRoot">
       It will emit event using $root:
-      <code>
+      <div class="mve-code">
         this.$root.$emit("onComponentChange", {
-          reload: true,
-          target: '{{ imageConfig.targetChild }}'
+        reload: true,
+        target: '{{ imageConfig.targetChild }}'
         });
-      </code>
+      </div>
     </div>
   </div>
 </template>

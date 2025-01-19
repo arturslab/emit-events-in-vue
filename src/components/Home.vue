@@ -1,29 +1,29 @@
 <template>
-  <div class="container">
+  <div class="mve-vue-container">
 
-    <div class="row">
-      <div class="col">
+    <div class="mve-row">
+      <div class="mve-col">
         <component-intro />
       </div>
     </div>
 
-    <div class="card">
+    <div class="mve-card">
 
-      <div class="row">
-        <div class="col">
+      <div class="mve-row">
+        <div class="mve-col">
           <h2>Parent Component</h2>
 
           <br />items:
           <pre>{{ tabItems }}</pre>
         </div>
-        <div class="col">
+        <div class="mve-col">
           <demo-image :firstChild="imageConfig.firstChild" :secondChild="imageConfig.targetChild"
             :useRoot="imageConfig.useRoot" />
         </div>
       </div>
 
-      <div class="flex-row">
-        <div class="flex-col tab-item" v-for="item in tabItems" :key="`tab-item-${item.componentName}`">
+      <div class="mve-flex-row">
+        <div class="mve-flex-col mve-tab-item" v-for="item in tabItems" :key="`tab-item-${item.componentName}`">
           <component :is="item.componentName" :title="item.title" :reload="item.reload"
             @onComponentChange="onComponentChange($event)" @onImageChange="onImageChange" />
         </div>

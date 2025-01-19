@@ -1,65 +1,70 @@
 @import "./base.css";
 
-#app {
+#mve-main {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
 }
 
-.mt-10 {
+.mve-mt-10 {
   margin-top: 10px;
 }
-.mb-10 {
+.mve-mb-10 {
   margin-bottom: 10px;
 }
 
-.row {
+.mve-row {
   display: block;
 }
-.col {
+.mve-col {
   flex: 1;
   padding: 16px;
 }
-.col-md {
+.mve-col-md {
   width: 100%;
   padding: 16px;
 }
 
-.flex-row {
+.mve-flex-row {
   display: flex;
   flex-direction: column;
 }
 
-.flex-col {
+.mve-flex-col {
   flex: 1;
 }
 
 @media (min-width: 1024px) {
-  .flex-row {
+  .mve-flex-row {
     flex-direction: row;
   }
 }
 
-.card {
-  margin: 16px;
-  padding: 16px;
+.mve-card {
+  margin: 6px;
+  padding: 10px;
   border: 1px solid #636060;
   border-radius: 5px;
-  min-width: 330px;
+  min-width: 250px;
 }
-.card p {
-  padding: 10px;
+.mve-card p {
+  padding: 8px;
 }
 
-.buttons {
+.mve-form-check-input {
+  margin-right: 10px !important;
+}
+
+.mve-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.buttons .btn {
-  padding: 10px 10px;
+.mve-buttons .mve-btn {
+  font-size: 11px;
+  padding: 6px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -67,65 +72,75 @@
   background-color: #7d7d7d;
 }
 
-.buttons .btn:hover {
+.mve-buttons .mve-btn:hover {
   background-color: #c3c3c3;
 }
 
-.buttons .btn.loading {
+.mve-buttons .mve-btn.loading {
   background-color: #e91e63;
   color: #1a1a1a;
   cursor: not-allowed;
 }
 
-p {
+#wp-melma-vue-emit-events p {
   margin: 16px 0;
 }
 
-pre {
+#wp-melma-vue-emit-events pre {
   background-color: #101010;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #636060;
 }
 
-em,
-code {
+#wp-melma-vue-emit-events em,
+#wp-melma-vue-emit-events .mve-code,
+#wp-melma-vue-emit-events code {
   color: #8bc34a;
 }
+#wp-melma-vue-emit-events code {
+  background-color: #252525de !important;
+}
 
-.bg_red {
+#wp-melma-vue-emit-events .mve-code {
+  font-size: 10px;
+}
+
+.mve-bg_red {
   background-color: #e91e63;
   color: #1a1a1a;
 }
-.bg_green {
+.mve-bg_green {
   background-color: #8bc34a;
   color: #1a1a1a;
 }
 
-.value_false {
+.mve-value_false {
   color: #8bc34a;
 }
-.value_true {
+.mve-value_true {
   color: #e91e63;
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+  #wp-melma-vue-emit-events {
+    /* display: flex; */
+    /* place-items: center; */
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  #mve-main {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
     padding: 0 2rem;
+
+    display: block;
   }
 
-  .row {
+  .mve-row {
     display: flex;
     justify-content: space-between;
   }
-  .col-md {
+  .mve-col-md {
     margin: 0;
   }
 }

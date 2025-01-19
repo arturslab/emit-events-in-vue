@@ -1,5 +1,5 @@
 <template>
-    <div class="svg-container">
+    <div class="mve-svg-container">
         <svg width="510.19214" height="317.88898" viewBox="0 0 510.19214 317.88898" version="1.1" id="svg1"
             inkscape:version="1.4 (86a8ad7, 2024-10-11)" sodipodi:docname="vue_events.svg"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -115,10 +115,11 @@ export default {
 </script>
 
 <style scoped>
-.svg-container {
+.mve-svg-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    max-width: 320px;
 }
 </style>

@@ -4,7 +4,7 @@ import Home from "./components/Home.vue";
 
 <template>
   <div id="wp-melma-vue-emit-events">
-    <main>
+    <main id="mve-main">
       <Home />
     </main>
   </div>
